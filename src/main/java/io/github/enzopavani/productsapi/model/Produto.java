@@ -1,7 +1,14 @@
 package io.github.enzopavani.productsapi.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="tb_produto")
 public class Produto {
 
+    @Id
     private String id;
     private String nome;
     private String descricao;
